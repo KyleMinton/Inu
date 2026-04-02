@@ -4,6 +4,9 @@
     <Filter Include="Inu">
       <UniqueIdentifier>{11F8870B-7D01-887C-067D-9E7C7285937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Inu\Events">
+      <UniqueIdentifier>{D5C6B52F-C17E-F77C-2A86-D0D8165D926D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Inu.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Inu\EntryPoint.h">
       <Filter>Inu</Filter>
     </ClInclude>
+    <ClInclude Include="src\Inu\Events\ApplicationEvent.h">
+      <Filter>Inu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inu\Events\Event.h">
+      <Filter>Inu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inu\Events\KeyEvent.h">
+      <Filter>Inu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inu\Events\MouseEvent.h">
+      <Filter>Inu\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Inu\Log.h">
       <Filter>Inu</Filter>
     </ClInclude>
+    <ClInclude Include="src\inupch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Inu\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Inu\Log.cpp">
       <Filter>Inu</Filter>
     </ClCompile>
+    <ClCompile Include="src\inupch.cpp" />
   </ItemGroup>
 </Project>

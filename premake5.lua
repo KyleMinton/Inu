@@ -18,6 +18,9 @@ project "Inu"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "inupch.h"
+    pchsource "Inu/src/inupch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
@@ -26,6 +29,7 @@ project "Inu"
 
     includedirs
     {
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
@@ -34,7 +38,7 @@ project "Inu"
         staticruntime "On"
         systemversion "latest"
 
-        characterset "Unicode"
+        characterset "Unicode" 
         buildoptions { "/utf-8" }   -- tells MSVC to compile source as UTF-8
 
         defines
