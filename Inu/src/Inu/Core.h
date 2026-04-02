@@ -11,4 +11,12 @@
 
 #endif
 
+#ifdef INU_ENABLE_ASSERTS
+	#define INU_ASSERT(x, ...) { if(!(x)) { INU_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define INU_CORE_ASSERT(x, ...) { if(!(x)) { INU_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define INU_ASSERT(x, ...)
+	#define INU_CORE_ASSERT(x, ...)
+#endif
+
 #define BIT(x) (1 << x)
