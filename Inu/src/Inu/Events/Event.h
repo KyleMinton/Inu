@@ -1,7 +1,7 @@
 #pragma once
 
 #include"inupch.h"
-#include "Core.h"
+#include "../Core.h"
 
 namespace Inu {
 
