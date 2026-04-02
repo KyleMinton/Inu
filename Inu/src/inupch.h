@@ -12,6 +12,10 @@
 #include<unordered_map>
 #include<unordered_set>
 
+#include "Inu/Log.h"
+#include "Inu/Core.h"
+#include"../Window.h"
+
 #ifdef INU_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
