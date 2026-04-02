@@ -1,4 +1,4 @@
-# Inu Engine
+# Inu Engine (in development)
 
 A custom game engine built in C++ following a tutorial series.
 
