@@ -171,6 +171,8 @@
     <ClInclude Include="src\Inu\Events\MouseEvent.h" />
     <ClInclude Include="src\Inu\Log.h" />
     <ClInclude Include="src\inupch.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Inu\Application.cpp" />
@@ -178,6 +180,7 @@
     <ClCompile Include="src\inupch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="WindowsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

@@ -7,6 +7,12 @@
     <Filter Include="Inu\Events">
       <UniqueIdentifier>{D5C6B52F-C17E-F77C-2A86-D0D8165D926D}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{a90d5962-7078-4973-9a7c-b3f03005d6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{f1558446-5221-4ad0-8601-4d1350533e8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Inu.h" />
@@ -35,6 +41,12 @@
       <Filter>Inu</Filter>
     </ClInclude>
     <ClInclude Include="src\inupch.h" />
+    <ClInclude Include="Window.h">
+      <Filter>Inu</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Inu\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Inu</Filter>
     </ClCompile>
     <ClCompile Include="src\inupch.cpp" />
+    <ClCompile Include="WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
